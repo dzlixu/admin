@@ -1,0 +1,160 @@
+/* cssrest */
+body {
+    font: 16px "microsoft yahei", Arial, Helvetica, sans-serif;
+    color:#666;
+    margin:0px;
+    padding:0px;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+footer,section,footer,div,ul{
+    box-sizing: border-box;
+}
+a  {
+    color:#666;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+    color:#ff0700;
+}
+input {border:none;}
+.fl   {float:left;}
+.fr  {float:right;}
+.clear  {clear:both;}
+
+header{
+    border:1px solid #aaa;
+    height: 50px;
+    min-width: 1024px;
+}
+header>div{
+    height: 50px;
+    line-height: 50px;
+}
+header .logo{
+    margin-left:30px;
+}
+header>div.fr{
+    width: 100px;
+    border:1px solid #999;
+}
+header>div.fr>span{
+   display: inline-block;
+   height: 40px;
+   
+}
+
+header>div.fr>span.icon{
+    height: 40px;
+    width:40px;   
+ }
+
+
+
+footer{
+    height: 30px;
+    width: 100%;
+    min-width: 1024px;
+    border:1px solid #aaa;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+footer>p{
+    margin:0 auto;
+    /* width: 1024px; */
+    line-height: 30px;
+    text-align: center;
+ }
+
+
+
+
+
+section{
+    /* border: 1px solid #ff0700; */
+    position: absolute;
+    top:50px;
+    bottom: 30px;
+    width: 100%;
+    min-width: 1024px;
+    overflow: auto
+}
+
+#nav {
+    float: left;
+    width: 300px;
+    height: 100%;
+    min-height: 600px;
+    overflow: auto;
+    border:1px solid #999;
+}
+#content{
+    margin-left:300px;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+    border:1px solid #00f;
+}
+#content-tab{
+    height: 40px;
+    border:1px solid #09f;
+    
+}
+#content-body{
+   position: absolute;
+   top:40px;
+   bottom:0;
+   width: 100%; 
+   overflow: auto;
+   border:1px solid #999;
+}
+.map{
+    min-height: 400px;
+    border:1px solid #90f;
+    min-width: 600px;
+}
+.info{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index: 1000;
+    width:400px;
+    border:1px solid #999;
+}
+.info>div.info-cont{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border:none;
+}
+div.info-cont>p{
+    width: 400px;
+}
+.toggle{
+    border:1px solid #999;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    left:0;
+    top:50%;
+    margin-left:-20px;
+     background-image: url(../images/right.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+}
+.toggle.close{
+    background-image: url(../images/left.png);
+}
+
+
+
